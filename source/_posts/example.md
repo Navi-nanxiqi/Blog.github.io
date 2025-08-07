@@ -3,7 +3,7 @@ title: Test-Page
 top-img: Blog/themes/butterfly/source/img/test-page.png
 ---
 
-# 容器技术基础(从原理到 Docker)
+# 容器技术基础
 
 
 ## 容器的本质与核心技术
