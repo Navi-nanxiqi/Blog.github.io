@@ -100,8 +100,12 @@ theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+url: git@github.com:Navi-nanxiqi/Blog.git  # 修改为 github io 的地址
+root: /blog/                           # 要将资源映射到仓库名
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:Navi-nanxiqi/Blog.git  # blog 的 git 地址
+  branch: main  
 
 markdown:
   plugins:
