@@ -13,7 +13,9 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://none.me
+root: /
+
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -100,12 +102,12 @@ theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-url: git@github.com:Navi-nanxiqi/Blog.git  # 修改为 github io 的地址
-root: /blog/                           # 要将资源映射到仓库名
 deploy:
-  type: git
-  repo: git@github.com:Navi-nanxiqi/Blog.git  # blog 的 git 地址
-  branch: main  
+  type: ''
+# deploy:
+#   type: git
+#   repo: git@github.com:Navi-nanxiqi/Blog.git  # blog 的 git 地址
+#   branch: main  
 
 markdown:
   plugins:
