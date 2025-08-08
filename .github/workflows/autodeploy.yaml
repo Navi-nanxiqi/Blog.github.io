@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout source
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2 #从git检查项目的源代码
       with:
         submodules: 'true'
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v1 #设置Node.js
       with:
         node-version: '22'
     - name: Setup hexo environment
