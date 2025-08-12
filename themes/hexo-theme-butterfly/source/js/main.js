@@ -425,6 +425,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentTop = window.scrollY || document.documentElement.scrollTop
       const isDown = scrollDirection(currentTop)
       if (currentTop > 56) {
+        // 消除加载时候的蓝色遮罩层
+        $header.classList.add("is-top-bar") 
         if (flag === '') {
           $header.classList.add('nav-fixed')
           $rightside.classList.add('rightside-show')
@@ -446,7 +448,8 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         flag = ''
         if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
+          // $header.classList.remove('nav-fixed', 'nav-visible')
+          $header.classList.remove('is-top-bar')
         }
         $rightside.classList.remove('rightside-show')
       }
