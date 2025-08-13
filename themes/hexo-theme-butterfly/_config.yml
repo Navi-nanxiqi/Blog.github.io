@@ -1134,7 +1134,9 @@ pjax:
   enable: true
   # 排除指定页面不使用 pjax，如 '/music/'
   exclude:
-    # - /xxxxxx/
+    - /music/
+    - /picture/
+    - /movies/
 
 # 注入 CSS 和脚本 (aplayer/meting)
 aplayerInject:
@@ -1218,7 +1220,7 @@ inject:
     - <link rel="stylesheet" href="/css/nav_menu.css">
   bottom:
     - <script src="/js/custom.js"></script>
-    - <script src="/js/data-pjax.js"></script>
+    # - <script src="/js/data-pjax.js"></script>
 
 # CDN 设置
 # 除非你知道它们的工作原理，否则不要修改以下设置
