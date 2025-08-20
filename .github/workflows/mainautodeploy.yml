@@ -1,0 +1,25 @@
+name: Generate Hexo
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2 #从git检查项目的源代码
+      with:
+        submodules: 'true'
+    - name: Setup Node.js
+      uses: actions/setup-node@v1 #设置Node.js
+      with:
+        node-version: '22'
+    - name: Setup hexo environment
+      run: |
+        npm install -g hexo-cli
+        npm ci
+    - name: Generate pages
+      run: |
+        hexo generate
+        ls -R public/
