@@ -1,4 +1,4 @@
-name: Generate Hexo
+name: Generate and Deploy Hexo
 on:
   push:
     branches:
@@ -23,3 +23,7 @@ jobs:
       run: |
         hexo generate
         ls -R public/
+    - name: deploy pages
+      run: |
+        hexo deploy
+        ls -R .deploy_git/
