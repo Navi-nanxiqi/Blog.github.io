@@ -4,7 +4,7 @@
 
 nav:
   # 导航栏 Logo 图片
-  logo:
+  logo: /img/cool.png
   # 是否显示标题
   display_title: true
   # 是否在滚动时显示文章标题
@@ -1131,10 +1131,12 @@ note:
 # https://github.com/MoOx/pjax
 pjax:
   # 是否启用 pjax
-  enable: false
+  enable: true
   # 排除指定页面不使用 pjax，如 '/music/'
   exclude:
-    # - /xxxxxx/
+    - /music/
+    - /picture/
+    - /movies/
 
 # 注入 CSS 和脚本 (aplayer/meting)
 aplayerInject:
@@ -1215,8 +1217,10 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/nav_menu.css">
   bottom:
     - <script src="/js/custom.js"></script>
+    # - <script src="/js/data-pjax.js"></script>
 
 # CDN 设置
 # 除非你知道它们的工作原理，否则不要修改以下设置
