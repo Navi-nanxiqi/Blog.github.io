@@ -25,5 +25,6 @@ jobs:
         ls -R public/
     - name: Deploy pages
       run: |
+        git config --global user.email "2155598746@qq.com"
+        git config --global user.name "confused-cat"
         hexo deploy
-        ls -R .deploy_git/
