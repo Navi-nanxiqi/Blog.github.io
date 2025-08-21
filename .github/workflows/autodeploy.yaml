@@ -23,3 +23,5 @@ jobs:
       run: |
         hexo generate
         ls -R public/
+    - name: Deploy pages
+      run: hexo deploy
