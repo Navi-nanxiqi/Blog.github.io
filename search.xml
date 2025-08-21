@@ -5,6 +5,19 @@
     
     <entry>
       <title>Add Page</title>
+      <link href="/2025/08/21/add-deploy/"/>
+      <url>/2025/08/21/add-deploy/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1>一、进程间通信</h1><h3 id="1-目的">1 目的</h3><blockquote><ul><li>数据传输：一个进程需要将其数据发送给另一个进程</li><li>资源共享：多个进程间共享同样的资源</li><li>通知机制：一个进程需要向另一个或另一组进程发送消息，通知其发生了某些事</li><li>进程控制：有些进程需要完全控制另一个进程的执行，此时控制进程希望可以拦截另一个进程的所有陷入和异常，且可以及时知道它的状态改变。</li></ul></blockquote><h3 id="2-发展">2 发展</h3><blockquote><ul><li>管道</li><li>System V进程间通信</li><li>POSIX进程间通信</li></ul></blockquote><h3 id="3-分类">3 分类</h3><blockquote><p>管道</p><ul><li>匿名管道pipe</li><li>命名管道</li></ul></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Add Page</title>
       <link href="/2025/08/21/addpage/"/>
       <url>/2025/08/21/addpage/</url>
       
