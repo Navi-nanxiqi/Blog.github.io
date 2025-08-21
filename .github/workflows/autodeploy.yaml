@@ -26,4 +26,4 @@ jobs:
     - name: Deploy pages
       run: |
         hexo deploy
-        ls -R public/
+        ls -R .deploy_git/
