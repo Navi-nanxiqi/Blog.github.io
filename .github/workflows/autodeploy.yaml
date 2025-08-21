@@ -23,15 +23,15 @@ jobs:
       run: |
         hexo generate
         ls -R public/
-    - name: Deploy pages
+    - name: Add Config
       run: |
-        git config --global user.email "2155598746@qq.com"
-        git config --global user.name "confused-cat"
+        git config --global user.email ${{secrets.EMAIL}}
+        git config --global user.name ${{secrets.NAME}}
 
     - name: Set up SSH key  # 新增：配置 SSH 密钥
       uses: webfactory/ssh-agent@v0.5.4
       with:
-        ssh-private-key: ${{ secrets.ID_RSA }}  # 对应步骤 3 中设置的 Secret 名称
+        ssh-private-key: ${{ secrets.DEPLOY_KEY }}  # 仓库secrets中进行配置
 
     - name: Trust GitHub SSH host  # 新增：信任 GitHub 主机
       run: ssh-keyscan github.com >> ~/.ssh/known_hosts
