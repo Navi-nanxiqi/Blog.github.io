@@ -104,7 +104,7 @@ theme: hexo-theme-butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Navi-nanxiqi/Blog.github.io.git  # blog 的 git 地址
+  repo: git@github.com:Navi-nanxiqi/confused-cat.github.io.git  # blog 的 git 地址
   branch: deploy  
 
 markdown:
