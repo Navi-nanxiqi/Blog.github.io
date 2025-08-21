@@ -100,13 +100,12 @@ ignore:
 theme: hexo-theme-butterfly
 
 # Deployment
+# github pages deploy the hexo website
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-# deploy:
-#   type: git
-#   repo: git@github.com:Navi-nanxiqi/Blog.git  # blog 的 git 地址
-#   branch: main  
+  type: git
+  repo: https://github.com/Navi-nanxiqi/Blog.github.io.git  # blog 的 git 地址
+  branch: deploy  
 
 markdown:
   plugins:
