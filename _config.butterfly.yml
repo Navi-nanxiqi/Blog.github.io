@@ -1215,6 +1215,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/nav_menu.css">
   bottom:
     - <script src="/js/custom.js"></script>
 
